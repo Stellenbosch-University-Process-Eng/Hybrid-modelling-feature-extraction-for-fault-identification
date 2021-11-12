@@ -51,7 +51,7 @@ for l = 4:1:6
         Window.Y  = [Ca_sens_UA(Index, l), T_out_UA(Index, l)]; % Measured data for current window
         
         % Regress parameters and store in array
-        p = lsqnonlin(@(p) LSQ_int_TML(p, Window, pf, f), pg, [0,0],[1,1], options);
+        p = lsqnonlin(@(p) LSQ_int(p, Window, pf, f), pg, [0,0],[1,1], options);
         pm_UA(i,1) = p(1)*pf.trans(1);
         pm_UA(i,2) = p(2)*pf.trans(2);
         %pm_UA(i,3) = p(3)*pf.trans(3);
@@ -93,7 +93,7 @@ for l = 1
         Window.Y  = [Ca_sens_fin(Index, l), T_out_fin(Index, l)]; % Measured data for current window
         
         % Regress parameters and store in array
-        p = lsqnonlin(@(p) LSQ_int_TML(p, Window, pf, f), pg, [0,0,0],[1,1,1], options);
+        p = lsqnonlin(@(p) LSQ_int(p, Window, pf, f), pg, [0,0,0],[1,1,1], options);
         pm_fin(i,1) = p(1)*pf.trans(1);
         pm_fin(i,2) = p(2)*pf.trans(2);
         %pm_fin(i,3)  = p(3)*pf.trans(3);
@@ -132,7 +132,7 @@ for l = 41
         Window.Y  = [Ca_sens_serr(Index, l), T_out_serr(Index, l)]; % Measured data for current window
         
         % Regress parameters and store in array
-        p = lsqnonlin(@(p) LSQ_int_TML(p, Window, pf, f), pg, [0,0],[1,1], options);
+        p = lsqnonlin(@(p) LSQ_int(p, Window, pf, f), pg, [0,0],[1,1], options);
         pm_serr(i,1) = p(1)*pf.trans(1);
         pm_serr(i,2) = p(2)*pf.trans(2);
         %pm_fin(i,3)  = p(3)*pf.trans(3);
