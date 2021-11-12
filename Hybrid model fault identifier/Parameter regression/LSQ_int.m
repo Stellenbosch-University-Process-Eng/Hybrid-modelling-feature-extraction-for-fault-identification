@@ -1,4 +1,4 @@
-function Err = LSQ_int_TML(p, Window, pf, f)
+function Err = LSQ_int(p, Window, pf, f)
 % Function to estimate the parameters given below through regression
 %  p(1) = k   (1/s),   reaction rate constant
 %  p(2) = ???
