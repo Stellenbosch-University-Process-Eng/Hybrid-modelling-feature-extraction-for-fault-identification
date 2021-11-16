@@ -16,3 +16,4 @@ is tracked and the information stored so that each obseravation can be lablled a
 The generated data is then saved as a MATLAB data file labelled _CSTR_gen_data_ which can then be loaded as needed by the parameter
 regression and fault identification scripts.
 
+The variable naming conventions followed by the generated data is described in the file Read_Me_CSTR_Data_gen.txt
