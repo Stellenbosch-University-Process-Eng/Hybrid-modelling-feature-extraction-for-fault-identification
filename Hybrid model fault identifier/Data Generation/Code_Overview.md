@@ -8,3 +8,9 @@ mean duration and duration variance is specified. The time points where a fault 
 is tracked and the information stored so that each obseravation can be lablled according to the operating conditions at that particular time.
 The function file which corresponds to each fault is listed as follows:
 
+* k0Data_fxn - Catalyst deactivation fault
+* CaData_fxn - Inlet concentration fault
+* UAData_fxn - Heat transfer fault
+
+The data generated data is then saved into a MATLAB data file labelled _CSTR_gen_data_ 
+
