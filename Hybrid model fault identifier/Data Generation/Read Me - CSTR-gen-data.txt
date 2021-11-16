@@ -1,0 +1,22 @@
+The CSTR_gen_data_UA.mat file represents a dataset generated using the CSTR model with the UA error fault case being actived.
+The variables contained within the file represent process measurements recorded during the the simulation. 
+Each column in the variable matrix represents the values of the variable for a specific process fault magnitude and each row represents an observation at a specific time instance. The time intervl between observations is one minute.
+The variables are labelled in the following fashion:
+
+For a variable labelled Ca_sens_UA the Ca_sens refers to the variable name(in this case the sensor reading of the outlet concentration) and _UA refers to the fault case( in this case the heat transfer coefficient error).
+
+The fault cases are labelled as follows: 
+nrm - normal case
+UA- overall heat transfer coefficient fault
+fin - catalyst deactivation fault
+serr - Inlet concentration fault
+
+The variable names are as follows:
+Ca_in - inlet concentration
+Ca_out - outlet concentration
+Ca_sens - senor reading of outlet concentration
+F_crt - inlet flow rate once control action is applied
+k - reaction rate 
+T_in - inlet temperature 
+T_out - outlet temperature
+Tj_sens - jacket temperature
