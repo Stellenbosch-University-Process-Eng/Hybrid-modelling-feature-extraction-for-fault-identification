@@ -7,3 +7,6 @@ The PLS model training is done using the npls function. The training parameter e
 The data is labelled based the fault and NOC durations set during data generation
 The training set and training parameter estimates are used to train the binary classifiers. The performance of the fault identification is done by using the multiclass svm fault identification approach where the fault is based on the majority of labels obtained for the observation. 
 The sensitivity and specificity are calculated using the _sens_test_ function based on the predicited data labels and the true data labels.
+
+The recursive PLS hyrbid model is implemented in the _SVM_recursive_pls.m_ script. THe PLS model is replaced with the recursive PLS model implemented using the _recursive_pls_ function. 
+The residuals in the recursive pls model are determined using the _res_est.m_ function.
